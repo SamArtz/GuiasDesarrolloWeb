@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    text-align: justify;
+
+}
+
+header {
+    background: #16A085;
+    top:0px;
+    height: 130px;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    
+}
+
+footer {
+    margin-top: 20px;
+    background: #16A085;
+    height: 50px;
+}
+
+header div, footer div {
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+}
+
+h1 {
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+    padding-top: 0.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+section{
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 140px;
+    
+}
+
+section article{
+    font-size: 0.9rem;
+    height: 340px;
+    width: 32.33%;
+    margin: 0.5px;
+    box-sizing: border-box;
+    border: 2px dashed #16A085;
+    padding: 1%;
+    box-sizing: border-box;
+    /*float: left;*/
+}
+
+section article img{
+    height: 180px;
+    max-width: 80%;
+    margin-right: 15px;
+    display: block;
+    margin: 5px auto;
+    
+}
+article h3, article p{
+    overflow: hidden;
+    text-align: center;
+}
+
+footer{
+    padding-top: 1rem;
+    position: fixed;
+    width: 100%;
+}
+
+section article:nth-child(2){
+    background-color: rgba(70,130,180,0.9);
+    position: static;
+    /* Cuando se usa absolute las demas cajas si utilizan el espacio vacio
+    que deja esta caja eso sucede porque no hay ningun otro elemento absoluto o relativo al que
+    tomar de referencia, pero cuando se usa relative se toma desde donde esta y a partir de ahi mueve los px
+    
+    Ademas el absolute altera el flujo normal del documento y el relative se queda como esta*/
+    left: 0px;
+    top: 0px;
+    /* display: none; */
+    /* La diferencia entre visibility hidden y display none  
+    
+    visibility hidden: lo oculta dejando el espacio del bloque vacio pero existente
+    
+    display none: Lo deja de mostrar incluyendo el propio contenedor y los demas objetos proceden a ocupar su espacio*/
+}
+
+
